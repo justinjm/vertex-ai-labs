@@ -4,10 +4,6 @@ project_id <- Sys.getenv("GCP_PROJECT_ID")
 bucket <- Sys.getenv("GCS_DEFAULT_BUCKET")
 email <- Sys.getenv("GARGLE_AUTH_EMAIL")
 
-# install required packages if not already 
-packages <- c("googleCloudStorageR", "gargle")
-install.packages(setdiff(packages, rownames(installed.packages())))  
-
 # load packages 
 library(googleCloudStorageR)
 library(gargle)
