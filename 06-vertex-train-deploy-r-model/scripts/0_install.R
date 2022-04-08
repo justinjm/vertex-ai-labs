@@ -2,27 +2,24 @@
 # Install required packages to reproduce and use this repository 
 # 
 # create list of CRAN packages required ---------------------------------------
-required <- c("ggplot2",
-              "randomForest",
-              "plumber",
-              
-              # "devtools",
+required <- c(
+              "devtools",
               # "remotes",
               # "assertthat",
               # "httr",
-              # "here",
-              # "googleAuthR",
-              # "googleCloudStorageR",
-              # "bigQueryR",
-              # "bigrquery",
-              # "googleCloudRunner",
-              "dpylr"
-              
-)
+              "here",
+              "gargle",
+              "googleAuthR",
+              "googleCloudStorageR",
+              "googleCloudRunner",
+              "dpylr",
+              "randomForest",
+              "plumber")
 
 # install packages from CRAN ---------------------------------------------------
 ## create list of packages not already installed and install missing ones 
 not_installed <- required[!(required %in% installed.packages()[,"Package"])]
+not_installed
 if(length(not_installed)) install.packages(not_installed)
 
 # install required packages from GitHub  --------------------------------------
