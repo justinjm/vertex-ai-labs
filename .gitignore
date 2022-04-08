@@ -131,4 +131,4 @@ dmypy.json
 # R 
 .Renviron
 .Rproj.user
-
+!/06-vertex-train-deploy-r-model/build/
