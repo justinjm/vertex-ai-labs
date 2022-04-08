@@ -1,3 +1,5 @@
+# functions.R --------------------------------------------------------------
+
 #' Custom log message
 #'
 #' @param ... The message(s)

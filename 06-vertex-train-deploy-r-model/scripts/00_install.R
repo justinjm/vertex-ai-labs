@@ -1,20 +1,20 @@
+# install.R --------------------------------------------------------------
 #
 # Install required packages to reproduce and use this repository 
 # 
 # create list of CRAN packages required ---------------------------------------
 required <- c(
               # "devtools",
+              "here",
               "dpylr",
               "readr",
               # "remotes",
               # "assertthat",
               # "httr",
-              "here",
               "gargle",
               "googleAuthR",
               "googleCloudStorageR",
               "googleCloudRunner",
-              
               "randomForest",
               "plumber")
 
