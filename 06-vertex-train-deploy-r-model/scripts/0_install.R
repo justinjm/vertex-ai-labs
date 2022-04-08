@@ -3,7 +3,9 @@
 # 
 # create list of CRAN packages required ---------------------------------------
 required <- c(
-              "devtools",
+              # "devtools",
+              "dpylr",
+              "readr",
               # "remotes",
               # "assertthat",
               # "httr",
@@ -12,7 +14,7 @@ required <- c(
               "googleAuthR",
               "googleCloudStorageR",
               "googleCloudRunner",
-              "dpylr",
+              
               "randomForest",
               "plumber")
 
